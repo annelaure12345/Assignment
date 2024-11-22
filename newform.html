@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New form</title>
+    <link rel="stylesheet" href="formstyless.css">
+</head>
+<body>
+    <h1>Laure's Travel Agency</h1>
+    <form>
+      <div>
+    <legend>Search</legend>
+    <label for="search"></label>
+    <input type="search" name="search" id="search"></div>
+  </form>
+    
+        <tr>
+          <form action="newform.php" method="post">
+        <fieldset>
+            <legend>Personal info</legend><br>
+            <label for="name">Names:</label>
+            <input type="text" name="name" id="names"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </fieldset><br><br>
+    </tr>
+    <tr>
+        <fieldset>
+            <legend>Country of Residence</legend><br>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <optgroup label="Europe">
+                    <option value="France">France</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Belgique">Belgique</option>
+                    </optgroup>
+               
+                
+                    <optgroup label="Afrique">
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Afrique du Sud">Afrique du Sud</option>
+                        <option value="Burundi">Burundi</option>
+                    </optgroup>
+                </select>
+                </fieldset><br><br>
+                      
+           
+                    <fieldset> 
+                        
+                            <legend>Which weather are you comfortable with?</legend><br>
+        <label for="weather">
+             <input type="radio" name="weather " value="hot">Hot weather</label><br><br>
+           
+                <label for="weather"> <input type="radio" name="weather" value="cold">Cold weather</label><br><br>
+            
+             
+                <label for="weather"><input type="radio"name="weather" value="any">Any kind </label>
+                
+            
+        </fieldset><br><br>
+      <fieldset >
+        <legend>Reasons for travelling</legend><br>
+        <label for="vacation"> <input type="checkbox" name="reason[]" value="vacation">Vacation</label>
+       <br><br>
+        <label for="work"><input type="checkbox" name="reason[]"value="work">Work</label>
+        <br><br>
+        <label for="emigration"><input type="checkbox" name="reason[]" value="emigration">Emigration</label>
+        <br><br>
+        <label for="others"><input type="checkbox" name="reason[]" value="others">Others</label>
+        
+      </fieldset><br><br>
+      <fieldset >
+        <legend>Birthday</legend>
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" value="birthday">
+      </fieldset><br><br>
+      <fieldset >
+        <legend>Which kind of food do you prefer</legend><br>
+        <label for="foods">Food preferences</label>
+        <input list="foods" name="food" id="food">
+        <datalist id="foods">
+            <option value="Seafood"></option>
+            <option value="Dairy products"></option>
+            <option value="Fast food"></option>
+            <option value="Any kind"></option>
+            <option value="None"></option>
+        </datalist>
+      </fieldset><br><br>
+      <fieldset>
+        <legend>Favourite color</legend>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color">
+
+      </fieldset>
+      <fieldset >
+        <legend>Expectations</legend><br>
+      <label for="message">What are you expecting from your journey ?</label><br><br>
+      <textarea id="message" name="message"rows="7" columns="30"></textarea>
+      </fieldset><br><br>
+      <fieldset >
+        <legend>Rate this</legend><br>
+        <label for="rangeInput">How much was this helpful?</label>
+        <input type="range" name="rangeInput" id="range" min="0" max="100" oninput="outputId.value=rangeInput.value">
+        <output id="outputId">50</output><br>
+      </fieldset><br><br>
+      <fieldset>
+        <legend>Time of sending the form</legend>
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time">
+      </fieldset><br><br>
+      <fieldset>
+        <legend>End</legend>
+        <button type="submit" name="submit" id="submit">Submit</button>
+        <button type="reset" name="reset" id="reset">Reset</button>
+      </fieldset>
+
+
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
